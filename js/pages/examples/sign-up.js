@@ -21,3 +21,22 @@ $(function () {
         }
     });
 });
+
+function dualDegreeCheck(degreeSelect){
+    console.log(degreeSelect.value);
+    console.log("Just changed!");
+    if(degreeSelect){
+        dualDegreeOptionValue = document.getElementById("dualDegreeOption").value;
+        if(degreeSelect.value == dualDegreeOptionValue){
+            document.getElementById("dualDegreeDiv").style.display = "";
+        }
+        else {
+            document.getElementById("dualDegreeDiv").style.display = "none";
+
+        }
+    }
+    else{
+        document.getElementById("dualDegreeDiv").style.display = "none";
+    }
+
+}

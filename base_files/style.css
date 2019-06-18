@@ -1,4 +1,4 @@
-/* Navbar ====================================== */
+﻿/* Navbar ====================================== */
 @import url(materialize.css);
 .navbar {
   font-family: "Roboto", sans-serif;
@@ -5001,8 +5001,7 @@ section.content {
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    position: relative;
-    }
+    position: relative; }
     .input-group .form-line:after {
       content: '';
       position: absolute;

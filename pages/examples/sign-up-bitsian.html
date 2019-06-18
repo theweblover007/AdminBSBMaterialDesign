@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Sign Up | BITS Pilani Marketplace</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+</head>
+
+<body class="signup-page">
+    <div class="signup-box">
+        <div class="logo">
+            <a href="javascript:void(0);"><b>BITS Pilani</b> Market</a>
+            <small>Powered by : DVM, BITS Pilani</small>
+        </div>
+        <div class="card">
+            <div class="body">
+                <form id="sign_up" method="POST">
+                    <div class="msg">Welcome {user.email}, Please provide further details to complete your registration. </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="namesurname" placeholder="Full Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">phone</i>
+                        </span>
+
+                        <div class="form-line">
+                            <input type="text" class="form-control mobile-phone-number" placeholder="Mobile Number">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">create</i>
+                        </span>
+                        <div class="form-line">
+                            <select class="form-control show-tick" onchange="dualDegreeCheck(this);">
+                                        <option value="0">I'm a single degree student</option>
+                                        <option id="dualDegreeOption" value="1">I'm a dual degree student</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">add_circle_outline</i>
+                        </span>
+                        <div class="form-line">
+                            <select class="form-control show-tick">
+                                        <option>B.E. Chemical</option>
+                                        <option>B.E. Civil</option>
+                                        <option>B.E. Computer Science</option>
+                                        <option>B.E. Electrical & Electronics</option>
+                                        <option>B.E. Electronics & Instrumentation</option>
+                                        <option>B.E. Mechanical</option>
+                                        <option>B.E. Manufacturing</option>
+                                        <option>B. Pharm.</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Yes dual degree is ticket yes then show below--!>
+                    <div id="dualDegreeDiv" style="display: none;">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                            <i class="material-icons">add_circle_outline</i>
+                        </span>
+                            <div class="form-line">
+                                <select class="form-control show-tick">
+                                        <option>M.Sc. Biological Sciences</option>
+                                        <option>M.Sc. Chemistry</option>
+                                        <option>M.Sc. Economics</option>
+                                        <option>M.Sc. Mathematics</option>
+                                        <option>M.Sc. Physics</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">COMPLETE REGISTRATION</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Validation Plugin Js -->
+    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/examples/sign-up.js"></script>
+</body>
+
+</html>
